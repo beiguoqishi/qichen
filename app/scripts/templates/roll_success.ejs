@@ -1,0 +1,44 @@
+<%if( show_rank ){%>
+        <h4>找出不一样，秒神比比看</h4>
+        <h5>排名结果</h5>
+        <p style="color: #ff0000">恭喜您</p>
+        <p>您的通关时间为</p>
+        <p style="color: #ff0000"><%=time%>秒</p>
+        <p>目前排名</p>
+        <p style="color: #ff0000">第三名</p>
+        <div>
+            <a href="javascript:void(0)" class="again">再来一次</a>
+            <a href="javascript:void(0)" class="share">炫耀一下</a>
+        </div>
+        <div class="share-area"></div>
+        <%} else {%>
+<p>
+    车身尺寸大一点，空间，大不同
+</p>
+<div>
+    <button type="button" class="next-roll"><%-next_roll%></button>
+</div>
+<%}%>
+<script type="text/tpl" id="share_list">
+    <ul>
+    <li>
+        <a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.baidu.com&to=pengyou&desc=&summary=&title=%E6%89%BE%E4%B8%8D%E5%90%8C&site=&pics=" target="_blank" class="pengyou">朋友圈</a>
+    </li>
+    <li>
+        <a href="http://service.weibo.com/share/share.php?title=找不同&url=http://www.baidu.com" target="_blank" class="pengyou">新浪微博</a>
+    </li>
+    <li>
+        <a href="javascript:void(0)" class="jiathis_button_weixin">微信</a>
+    </li>
+    <li>
+        <a href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.baidu.com&desc=&title=&summary=&pics=&flash=&site=&style=201&width=32&height=32" target = "_blank"class="qq">qq好友</a>
+    </li>
+    <li>
+        <a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.baidu.com&title=游戏" target="_blank" class="pengyou">qq空间</a>
+    </li>
+    <li>
+        <a href="http://share.v.t.qq.com/index.php?c=share&a=index&title=%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98%E6%88%96%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98%E5%87%BD%E6%95%B0&url=http://www.baidu.com&site=http://www.baidu.com/" target="_blank" class="pengyou">腾讯微博</a>
+    </li>
+</ul>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1" charset="utf-8"></script>
+</script>
